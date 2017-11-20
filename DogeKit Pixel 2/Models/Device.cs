@@ -1,24 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Xml.Serialization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Xml.Serialization;
+using System.Collections.ObjectModel;
 
 namespace DogeKit_Pixel_2.Models
 {
-    class Device
+    public class Device
     {
-        private string Name { get; } 
-        public string Codename { get; }
         [XmlElement]
-        public List<FactoryImage> FactoryImages = new List<FactoryImage>();
+        public string Name { get; set; }
+        [XmlAttribute]
+        public string Codename { get; set; }
+        [XmlElement]
+        public ObservableCollection<FactoryImage> FactoryImages = new ObservableCollection<FactoryImage>();
+        [XmlElement]
+        public ObservableCollection<TWRP> RecoveryVersions = new ObservableCollection<TWRP>();
 
-        public void LoadFactoryImages()
+        public void AddFactoryImage(string build, string releaseId, string version)
         {
-            FactoryImages.Clear();
-            foreach (FactoryImage fi in )
-            FactoryImages.Add(new FactoryImage())
+            FactoryImages.Add(new FactoryImage() { Build = build, ReleaseId = releaseId, Version = version });
+        }
+
+        public override string ToString()
+        {
+            return Name + " (" + Codename + ")";
         }
     }
 }
