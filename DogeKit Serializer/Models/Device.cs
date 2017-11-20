@@ -41,15 +41,6 @@ namespace DogeKit_Serializer.Models
             return false;
         }
 
-        public void LoadFactoryImages()
-        {
-            FactoryImages.Clear();
-            foreach (FactoryImage fi in FactoryImages)
-            {
-                FactoryImages.Add(fi);
-            }
-        }
-
         public override string ToString()
         {
             return Name + " (" + Codename + ")";
