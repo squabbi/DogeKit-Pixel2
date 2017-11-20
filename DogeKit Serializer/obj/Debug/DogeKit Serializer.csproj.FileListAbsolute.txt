@@ -1,0 +1,14 @@
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\bin\Debug\DogeKit Serializer.exe.config
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\bin\Debug\DogeKit Serializer.exe
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\bin\Debug\DogeKit Serializer.pdb
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer.csprojResolveAssemblyReference.cache
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\MainWindow.g.cs
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\App.g.cs
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer_MarkupCompile.cache
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer_MarkupCompile.lref
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\MainWindow.baml
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer.g.resources
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit_Serializer.Properties.Resources.resources
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer.csproj.GenerateResource.Cache
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer.exe
+D:\Development\Source\DogeKit-Pixel2\DogeKit Serializer\obj\Debug\DogeKit Serializer.pdb

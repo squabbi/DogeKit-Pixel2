@@ -1,0 +1,59 @@
+﻿<Window x:Class="DogeKit_Serializer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DogeKit_Serializer"
+        mc:Ignorable="d"
+        Title="DogeKit Serializer" Height="449" Width="993" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="txtBxDeviceName" HorizontalAlignment="Left" Height="23" Margin="90,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="1"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="15,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Codename:" HorizontalAlignment="Left" Margin="15,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TxtBxCodename" HorizontalAlignment="Left" Height="23" Margin="90,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="2"/>
+        <ListView x:Name="lvDevices" HorizontalAlignment="Left" Height="284" Margin="10,126,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="lvDevices_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Codename" DisplayMemberBinding="{Binding Codename}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnLoad" Content="Load XML" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btnLoad_Click"/>
+        <Button x:Name="btnSave" Content="Write XML" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click" TabIndex="1000"/>
+        <Button x:Name="btnAddDevice" Content="Add" HorizontalAlignment="Left" Margin="135,98,0,0" VerticalAlignment="Top" Width="75" Click="btnAddDevice_Click" TabIndex="3"/>
+        <ListView x:Name="lvFactoryImages" HorizontalAlignment="Left" Height="284" Margin="225,126,0,0" VerticalAlignment="Top" Width="359">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Build number" DisplayMemberBinding="{Binding Build}"/>
+                    <GridViewColumn Header="Release ID" DisplayMemberBinding="{Binding ReleaseId}"/>
+                    <GridViewColumn Header="Android version" DisplayMemberBinding="{Binding Version}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Build:" HorizontalAlignment="Left" Margin="225,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="ReleaseID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,40,0,0"/>
+        <TextBox x:Name="txtBxBuild" HorizontalAlignment="Left" Height="23" Margin="294,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TabIndex="4"/>
+        <TextBox x:Name="txtBxReleaseId" HorizontalAlignment="Left" Height="23" Margin="294,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TabIndex="5"/>
+        <Button x:Name="btnAddFactoryImage" Content="Add" HorizontalAlignment="Left" Margin="350,101,0,0" VerticalAlignment="Top" Width="75" Click="btnAddFactoryImage_Click" TabIndex="7"/>
+        <Button x:Name="btnRemoveDevice" Content="Remove" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="75" Click="btnRemoveDevice_Click"/>
+        <Button x:Name="btnRemoveFactoryImage" Content="Remove" HorizontalAlignment="Left" Margin="270,101,0,0" VerticalAlignment="Top" Width="75" Click="btnRemoveFactoryImage_Click"/>
+        <Label Content="Version:" HorizontalAlignment="Left" Margin="225,66,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBxVersion" HorizontalAlignment="Left" Height="23" Margin="294,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TabIndex="6"/>
+        <Image HorizontalAlignment="Left" Height="103" Margin="865,10,0,0" VerticalAlignment="Top" Width="85" Source="Images/doge.bmp"/>
+        <Label Content="TWRP version:" HorizontalAlignment="Left" Margin="599,13,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBxTwrpVersion" HorizontalAlignment="Left" Height="23" Margin="599,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="8"/>
+        <Button x:Name="btnRemoveTWRP" Content="Remove" HorizontalAlignment="Left" Margin="599,72,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnAddTWRP" Content="Add" HorizontalAlignment="Left" Margin="679,72,0,0" VerticalAlignment="Top" Width="75" TabIndex="9" Click="btnAddTWRP_Click"/>
+        <ListView x:Name="lvTwrp" HorizontalAlignment="Left" Height="284" Margin="599,126,0,0" VerticalAlignment="Top" Width="155">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="TWRP version" DisplayMemberBinding="{Binding Version}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="770,126,0,0" TextWrapping="Wrap" Text="DogeKit Serializer" VerticalAlignment="Top" Width="180" Height="29" FontSize="18" FontWeight="Bold" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="950,140,0,0" TextWrapping="Wrap" Text="1.0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="770,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="251" Width="198"><Run Text="For use with DogeKit, a free and open source Android toolkit. This serializer creates the devices.xml used for supplying data to the toolkit for online use."/><LineBreak/><Run/><LineBreak/><Run Text="Source:"/><LineBreak/><Run Text="XDA:"/><LineBreak/><Run Text="Twitter:"/></TextBlock>
+    </Grid>
+</Window>

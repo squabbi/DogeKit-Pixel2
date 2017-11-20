@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<DeviceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Device Codename="angler">
+      <FactoryImages ReleaseId="76435">
+        <Version>8.0.0</Version>
+        <Build>opr90.24246.213679</Build>
+      </FactoryImages>
+      <RecoveryVersions>
+        <Version>3.2.1-3</Version>
+      </RecoveryVersions>
+      <Name>Nexus 6P</Name>
+    </Device>
+    <Device Codename="walleye">
+      <FactoryImages ReleaseId="9493027">
+        <Version>8.0.0</Version>
+        <Build>opr90.124124.213679</Build>
+      </FactoryImages>
+      <RecoveryVersions>
+        <Version>3.123-RC2</Version>
+      </RecoveryVersions>
+      <Name>Pixel 2</Name>
+    </Device>
+  </List>
+</DeviceList>
