@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace DogeKit_Pixel_2
+namespace DogeKit_Serializer
 {
     /// <summary>
     /// Interaction logic for App.xaml

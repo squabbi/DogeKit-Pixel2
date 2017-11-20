@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 
 namespace DogeKit_Pixel_2
 {
@@ -23,6 +24,16 @@ namespace DogeKit_Pixel_2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnDriverGuide_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        protected void ReadDeviceList(string codename)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Device));
         }
     }
 }

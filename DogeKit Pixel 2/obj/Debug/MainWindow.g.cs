@@ -32,7 +32,7 @@ using System.Windows.Shapes;
 using System.Windows.Shell;
 
 
-namespace DogeKit_Pixel_2 {
+namespace DogeKit_Serializer {
     
     
     /// <summary>

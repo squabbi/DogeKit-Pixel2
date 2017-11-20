@@ -1,0 +1,5 @@
+D:\Development\Source\DogeKit-Pixel2\DogeKit Pixel 2\obj\Debug\DogeKit Pixel 2.csprojResolveAssemblyReference.cache
+D:\Development\Source\DogeKit-Pixel2\DogeKit Pixel 2\obj\Debug\MainWindow.g.cs
+D:\Development\Source\DogeKit-Pixel2\DogeKit Pixel 2\obj\Debug\App.g.cs
+D:\Development\Source\DogeKit-Pixel2\DogeKit Pixel 2\obj\Debug\DogeKit Pixel 2_MarkupCompile.cache
+D:\Development\Source\DogeKit-Pixel2\DogeKit Pixel 2\obj\Debug\DogeKit Pixel 2_MarkupCompile.lref

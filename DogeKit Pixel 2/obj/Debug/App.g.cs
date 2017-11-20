@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using DogeKit_Pixel_2;
+using DogeKit_Serializer;
 using System;
 using System.Diagnostics;
 using System.Windows;
