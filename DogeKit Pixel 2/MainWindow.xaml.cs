@@ -30,10 +30,5 @@ namespace DogeKit_Pixel_2
         {
             
         }
-
-        protected void ReadDeviceList(string codename)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Device));
-        }
     }
 }

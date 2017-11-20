@@ -75,6 +75,7 @@
     <Compile Include="Models\Device.cs" />
     <Compile Include="Models\DeviceList.cs" />
     <Compile Include="Models\FactoryImage.cs" />
+    <Compile Include="Models\TWRP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
